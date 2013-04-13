@@ -238,6 +238,10 @@
     <string name="title_clock_ampm_entries">AM/PM style</string>
     <string name="enable_clock_weekday">Day of the week</string>
     <string name="enable_clock_weekday_summary">Abbreviated day of the week before the time</string>
+    <string name="enable_clock_month">Date display</string>
+    <string name="enable_clock_month_summary">Date and short or long month before the time</string>
+    <string name="enable_clock_month_style">Date style</string>
+    <string name="enable_clock_month_style_summary">Display style of the date</string>
     <string name="colors">Colors</string>
     <string name="clock_color_title">Clock color</string>
     <string name="alarm">Alarms</string>
@@ -729,6 +733,8 @@
     <string name="protekk_oclock">ProTekk O\'Clock</string>
     <string name="small_weekday">Small weekday</string>
     <string name="regular_weekday">Regular weekday</string>
+    <string name="short_month">Short month</string>
+    <string name="long_month">Long month</string>
 
     <!-- toggle style -->
     <string name="icon_only">Icon only</string>
