@@ -10,13 +10,14 @@
   <string name="header_statusbar">Stavová lišta</string>
   <string name="header_navbar">Navigační lišta</string>
   <string name="toggles_layout">Přepínače</string>
-  <string name="general_ui">Hlavní nastavení</string>
+  <string name="general_ui">Uživatelské rozhraní</string>
   <string name="clock">Hodiny</string>
   <string name="battery">Baterie</string>
   <string name="signal">Signál</string>
   <string name="nav_bar">Navigační lišta</string>
   <string name="power_menu">Menu napájení</string>
   <string name="led_options">LED</string>
+  <string name="spen_options">S Pen gesta</string>
   <string name="header_system">Systém</string>
   <string name="sound">Zvuk</string>
   <string name="lockscreen_options">Zamčená obrazovka</string>
@@ -31,6 +32,7 @@
   <string name="title_navbar">Navigační panel</string>
   <string name="title_power_menu">Menu napájení</string>
   <string name="title_led">Ovládání LED</string>
+  <string name="title_spen">S Pen gesta</string>
   <string name="title_lockscreens">Možnosti zamčené obrazovky</string>
   <string name="title_lockscreens_targets">Položky zamčené obrazovky</string>
   <string name="title_navring">Navigační kruh</string>
@@ -47,6 +49,7 @@
   <string name="header_summary_navigation_bar">@null</string>
   <string name="header_summary_power_menu">@null</string>
   <string name="header_summary_led">@null</string>
+  <string name="header_summary_spen">@null</string>
   <string name="header_summary_sound">@null</string>
   <string name="header_summary_performance">@null</string>
   <string name="header_summary_lockscreens">@null</string>
@@ -61,11 +64,21 @@
   <string name="misc_short">Ostatní</string>
   <string name="custom_app_icon_successfully"> ikona úspěšně nastavena!</string>
   <!--Power Menu-->
-  <string name="title_show_power_saver">Zobrazovat spořič energie</string>
-  <string name="title_show_screenshot">Zobrazovat snímek obrazovky</string>
-  <string name="title_show_torch_toggle">Zobrazovat přepínač svítilny</string>
-  <string name="title_show_airplane_toggle">Zobrazovat přepínač letového módu</string>
-  <string name="title_show_navbar_hide">Zobrazovat přepínač navigační lišty</string>
+  <string name="title_show_power_saver">Zobrazit spořič energie</string>
+  <string name="title_show_screenshot">Zobrazit snímek obrazovky</string>
+  <string name="title_show_torch_toggle">Zobrazit přepínač svítilny</string>
+  <string name="title_show_airplane_toggle">Zobrazit přepínač letového módu</string>
+  <string name="title_show_navbar_hide">Zobrazit přepínač navigační lišty</string>
+  <string name="title_show_reboot_keyguard">Zobrazit restartovat na zamčené obrazovce</string>
+  <!-- S Pen -->
+  <string name="spen_left_title">Akce přetažení vlevo</string>
+  <string name="spen_right_title">Akce přetažení vpravo</string>
+  <string name="spen_up_title">Akce přetažení nahoru</string>
+  <string name="spen_down_title">Akce přetažení dolů</string>
+  <string name="spen_double_title">Akce dvojitého stisku</string>
+  <string name="spen_long_title">Akce dlouhého stisku</string>
+  <string name="spen_enable">Zapnout S Pen gesta</string>
+  <string name="spen_enable_summary">Nastavit vlastní akce S Pen gest</string>
   <!--Power Saving-->
   <string name="title_pref_powersaving_pref_mode">Zapnout spořič energie</string>
   <string name="summary_pref_powersaving_pref_mode">@null</string>
@@ -207,11 +220,10 @@
   <string name="toggle_style_title">Styl přepínačů</string>
   <string name="toggle_style_summary">Určuje zobrazení textu nebo ikon u přepínačů.</string>
   <string name="toggles_layout_title">Vzhled přepínačů</string>
-  <string name="enabled_toggles_title">Zapnuté přepínače</string>
-  <string name="enabled_toggles_summary">Vybrat povolené přepínače</string>
-  <string name="toggles_display_dialog">Vybrat používané přepínače</string>
   <string name="toggles_per_row_title">Přepínačů na řádek</string>
   <string name="toggles_per_row_summary">Vybrat kolik se bude zobrazovat přepínačů na každém řádku</string>
+  <string name="toggles_style_title">Styl přepínačů</string>
+  <string name="toggles_style_summary">U notifikací (tradiční) nebo dlaždice</string>
   <string name="toggles_display_close">Zavřít</string>
   <string name="toggles_order_title">Pořadí přepínačů</string>
   <string name="toggles_order_summary">Určuje pořadí, v jakém jsou přepínače zobrazovány</string>
@@ -234,6 +246,12 @@
   <string name="toggle_enable_fasttoggle_summary">Zapnout přímý přístup k přepínačům jedním prstem</string>
   <string name="toggle_choose_fasttoggle_side_title">Zvolit stranu rychlého přístupu</string>
   <string name="toggle_choose_fasttoggle_side_summary">Zvolit z jaké strany lišty bude lišta s přepínači přístupná</string>
+  <string name="toggle_dialog_arrange_title">Nastavení přepínačů</string>
+  <string name="toggle_dialog_add_toggles">Přidat vybrané přepínače</string>
+  <string name="toggle_style_tile">Dlaždice</string>
+  <string name="toggle_style_traditional">Tradiční</string>
+  <string name="toggle_swap_handle_side">Uchopením vpravo je možné přetahovat</string>
+  <string name="add_toggles">Změnit přepínače</string>
   <!--Statusbar | Clock-->
   <string name="clock_title_enable">Styl hodin</string>
   <string name="title_clock_ampm_entries">AM/PM styl</string>

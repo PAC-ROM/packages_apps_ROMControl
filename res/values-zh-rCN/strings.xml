@@ -6,7 +6,8 @@
     <!-- Header Strings 标题文本 -->
     <string name="user_interface">界面</string>
     <string name="cancel">取消</string>
-    <string name="ok">确认</string>
+    <string name="ok">确定</string>
+    <string name="save">保存</string>
     <string name="menu_main_activity_change_locale">空白!</string>
     <string name="header_statusbar">状态栏</string>
     <string name="header_navbar">导航栏</string>
@@ -71,7 +72,8 @@
     <string name="title_show_screenshot">显示屏幕截图</string>
     <string name="title_show_torch_toggle">显示手电筒开关</string>
     <string name="title_show_airplane_toggle">显示飞行模式开关</string>
-    <string name="title_show_navbar_hide">显示导航栏开关</string>
+    <string name="title_show_navbar_hide">显示导航栏控制</string>
+    <string name="title_show_reboot_keyguard">锁屏时显示重启</string>
 
     <!-- Power Saving 省电模式 -->
     <string name="title_pref_powersaving_pref_mode">启用省电模式</string>
@@ -122,6 +124,8 @@
     <string name="custom_carrier_label_notset">当前未自定义运营商名称</string>
     <string name="ime_switcher_title">显示输入法切换</string>
     <string name="ime_switcher_summary">输入时状态栏显示键盘图标</string>
+    <string name="wakeup_when_plugged_unplugged_title">充电唤醒</string>
+    <string name="wakeup_when_plugged_unplugged_summary">当连接或移除充电器时唤醒设备</string>
     <string name="lefty_mode_title">左手模式</string>
     <string name="lefty_mode_summary">交换导航栏位置（将重启用户界面）</string>
     <string name="rotate_180_title">允许 180° 旋转</string>
@@ -130,8 +134,8 @@
     <string name="recent_kill_all_summary">在系统的近期任务界面显示“全部结束”按钮</string>
     <string name="ram_bar">近期 RAM 栏</string>
     <string name="ram_bar_summary">在近期任务显示 RAM 使用情况</string>
-    <string name="kill_app_longpress_back">长按返回键结束程序</string>
-    <string name="kill_app_longpress_back_summary">长时间按住返回键可以强行结束当前程序</string>
+    <string name="longpress_to_kill">长按返回键结束程序</string>
+    <string name="longpress_to_kill_summary">长时间按住返回键可以强行结束当前程序</string>
     <string name="tablet_ui">强制使用平板界面</string>
     <string name="tablet_ui_summary">可强制使用平板设备专用的界面（需重启）</string>
     <string name="hide_extras">隐藏多余内容</string>
@@ -153,7 +157,19 @@
     <string name="notification_show_wifi_ssid_summary">显示当前链接的 WiFi 网络名称</string>
     <string name="brightness_slider_title">状态栏调节亮度</string>
     <string name="brightness_slider_summary">未启用自动亮度时，在状态栏滑动可改变亮度。</string>
-
+    <string name="user_mode_ui">用户界面模式</string>
+    <string name="user_mode_ui_summary">选择导航栏和状态栏显示风格（将重启用户界面）</string>
+    <string name="phone_mode_ui">手机 - 横屏时导航栏在侧边</string>
+    <string name="tablet_mode_ui">平板 - 导航栏与系统栏结合</string>
+    <string name="phablet_mode_ui">手机平板 - 横屏时导航栏在底部</string>
+    <string name="transparency_dialog_title">透明度设置</string>
+    <string name="transparency_dialog_linked_transparency">同时作用于状态栏和导航栏</string>
+    <string name="transparency_dialog_transparency_sb_and_nv">状态栏和导航栏</string>
+    <string name="transparency_dialog_statusbar">状态栏</string>
+    <string name="transparency_dialog_navbar">导航栏</string>
+    <string name="transparency_dialog_match_keyguard_alpha">匹配锁屏界面透明度</string>
+    <string name="transparency_dialog_transparency">主屏幕透明度</string>
+    <string name="transparency_dialog_transparency_keyguard">锁屏界面透明度</string>
 
     <!-- LCD Density 密度 -->
     <string name="lcd_density_title">LCD 密度</string>
@@ -222,11 +238,11 @@
     <string name="clock_title_enable">时钟风格</string>
     <string name="title_clock_ampm_entries">上午/下午 风格</string>
     <string name="enable_clock_weekday">星期计数</string>
-    <string name="enable_clock_weekday_summary">在时间前简短显示星期几</string>
+    <string name="enable_clock_weekday_summary">在时间前显示周几</string>
     <string name="colors">颜色</string>
     <string name="clock_color_title">时钟颜色</string>
-    <string name="alarm">提醒</string>
-    <string name="clock_options">时钟选项</string>
+    <string name="alarm">闹钟</string>
+    <string name="clock_options">日期和时间设置</string>
     <string name="nothing">无</string>
     <string name="today">今日日程</string>
     <string name="event">新日程事件</string>
@@ -245,7 +261,7 @@
     <string name="toggle_data">数据网络</string>
     <string name="toggle_nfc">NFC 近场通讯</string>
     <string name="toggle_silent">静音</string>
-    <string name="toggle_swagger">手机自爆</string>
+    <string name="toggle_swagger">屌爆</string>
     <string name="toggle_sync">数据同步</string>
     <string name="toggle_torch">LED 灯光</string>
     <string name="toggle_2g">2G 模式</string>
@@ -258,10 +274,12 @@
     <string name="toggle_settings">系统设置</string>
     <string name="toggle_signal">信号</string>
     <string name="toggle_clock">时钟</string>
-    <string name="toggle_ime">输入法</string>
+    <string name="toggle_ime">输入法选择器</string>
     <string name="toggle_battery">电量</string>
     <string name="toggle_brightness">亮度</string>
     <string name="toggle_sound_state">铃声/振动/静音</string>
+    <string name="toggle_navbar_hide">导航栏自动隐藏</string>
+    <string name="toggle_quickrecord">快捷录音</string>
 
     <!-- Statusbar | Battery 状态栏|电量 -->
     <string name="battery_icon">电量图标风格</string>
@@ -297,9 +315,10 @@
 
     <!-- Navigation Bar 导航栏 -->
     <string name="navigation_bar">导航栏</string>
+    <string name="navbar_hide">导航栏隐藏</string>
     <string name="navbar_button_cat">导航栏按键</string>
     <string name="title_pref_menu_display">菜单键位置</string>
-    <string name="summary_pref_menu_display">使用大菜单键时请务必选择移除菜单键</string>
+    <string name="summary_pref_menu_display">使用大菜单键时请务必选择“不显示”</string>
     <string name="title_pref_navigation_menu_display">菜单键可见性</string>
     <string name="summary_pref_navigation_menu_display">你想菜单键在什么情况下显示？</string>
     <string name="navbar_qty_title">导航栏按键数量</string>
@@ -314,17 +333,21 @@
     <string name="navbar_action_home">主屏幕</string>
     <string name="navbar_action_back">返回</string>
     <string name="navbar_action_recents">近期任务</string>
+    <string name="navbar_action_recents_gb">近期任务 (姜饼风格)</string>
     <string name="navbar_action_search">搜索</string>
     <string name="navbar_action_screenshot">屏幕截图</string>
     <string name="navbar_action_menu">菜单</string>
-    <string name="navbar_action_ime">打开输入法选择器</string>
+    <string name="navbar_action_ime">输入法选择器</string>
     <string name="navbar_action_kill">结束程序</string>
+    <string name="navbar_action_lastapp">上次运行程序</string>
     <string name="navbar_action_power">电源</string>
     <string name="navbar_action_notifications">通知栏</string>
     <string name="navbar_action_none">空</string>
     <string name="navbar_widgets">导航栏小部件</string>
     <string name="navigation_bar_color_title">导航栏颜色</string>
     <string name="navigation_bar_tint_title">导航栏按键颜色</string>
+    <string name="navigation_bar_colorall_title">着色所有按键</string>
+    <string name="navigation_bar_colorall_summary">选中后自定义图标将被着色</string>
     <string name="navigation_bar_glow_tint_title">导航栏按键按下发光颜色</string>
     <string name="navigation_bar_glow_tint_summary">当你按下一个按键时，它的背景会发光。使用该选项来改变发光的颜色。</string>
     <string name="glow_times_title">按键发光动画</string>
@@ -341,8 +364,20 @@
     <string name="navbar_widgets_shiftRight">右移</string>
     <string name="navbar_widgets_delete">删除小部件</string>
     <string name="navigation_bar_menu_arrow_keys_title">箭头按键</string>
-    <string name="navigation_bar_menu_arrow_keys_summary">在导航栏显示箭头按键用于准确定位输入光标或选择菜单。</string>
+    <string name="navigation_bar_menu_arrow_keys_summary">在导航栏显示箭头按键用于准确定位输入光标或选择菜单</string>
     <string name="navigation_bar_alpha_title">状态栏与导航栏透明度</string>
+    <string name="navbar_hide_enable_title">隐藏导航栏</string>
+    <string name="drag_handle_opacity_title">滑动区透明度</string>
+    <string name="drag_handle_width_title">滑动区宽度</string>
+    <string name="title_navbar_timeout">隐藏导航栏超时</string>
+    <string name="summary_navbar_timeout">超时多久后隐藏导航栏</string>
+    <string name="hide_navbar_timeout_never">永不</string>
+    <string name="hide_navbar_timeout_1500">1.5 秒</string>
+    <string name="hide_navbar_timeout_3000">3 秒</string>
+    <string name="hide_navbar_timeout_5000">5 秒</string>
+    <string name="hide_navbar_timeout_10000">10 秒</string>
+    <string name="hide_navbar_timeout_15000">15 秒</string>
+    <string name="hide_navbar_timeout_30000">30 秒</string>
 
     <!-- Nav Ring Targets 导航环目标 -->
     <string name="navbar_ring_cat">导航环目标</string>
@@ -362,7 +397,7 @@
     <string name="interface_softkeys_reboot_title">重启菜单</string>
     <string name="interface_softkeys_screenshot_title">屏幕截图</string>
     <string name="interface_softkeys_screenoff_title">关闭屏幕</string>
-    <string name="interface_softkeys_ime_switcher_title">打开输入法选择器</string>
+    <string name="interface_softkeys_ime_switcher_title">输入法选择器</string>
     <string name="interface_softkeys_ring_vib_title">铃声/振动</string>
     <string name="interface_softkeys_ring_silent_title">铃声/静音</string>
     <string name="interface_softkeys_ring_vib_silent_title">铃声/振动/静音</string>
@@ -377,7 +412,7 @@
     <string name="interface_navring_assist_title">Google Now</string>
     <string name="interface_navring">导航环目标</string>
     <string name="navbar_ring">自定义导航环目标</string>
-    <string name="navring_enable_long">启用导航环长按</string>
+    <string name="navring_enable_long">长按“主屏幕”键启动导航环</string>
 
     <!-- LED 灯光 -->
     <string name="led_on">LED 点亮</string>
@@ -404,7 +439,7 @@
 
     <!-- Sound 声音 -->
     <string name="less_notification_sounds_title">限制通知提示音</string>
-    <string name="less_notification_sounds_summary">在设定时间内应用程序通知提示音只响应一次。</string>
+    <string name="less_notification_sounds_summary">在设定时间内应用程序通知提示音只响应一次</string>
     <string name="title_headphone_audio_mode">接入耳机时的动作</string>
     <string name="summary_headphone_audio_mode">设定在插入或拔出耳机时的声音设置</string>
     <string name="title_bt_audio_mode">蓝牙 A2DP 连接时的动作</string>
@@ -412,16 +447,20 @@
     <string name="headphones_mode_no_action">不进行任何动作</string>
     <string name="headphones_mode_vibrate">振动模式</string>
     <string name="headphones_mode_silent">静音模式</string>
-    <string name="title_flip_mode">手机朝下时的声音模式</string>
-    <string name="summary_flip_mode">设定在当你把手机翻面时的声音设置</string>
-    <string name="flip_cat_title">手机朝下时的动作</string>
+    <string name="title_flip_mode">反转时的声音模式</string>
+    <string name="summary_flip_mode">设定在当设备正面朝下时的声音模式</string>
+    <string name="flip_cat_title">反转时的动作</string>
     <string name="title_timeout_sec">屏幕超时时间</string>
-    <string name="summary_timeout_sec">在翻转感应器关闭后屏幕熄灭的时间</string>
-    <string name="title_down_sec">手机朝下判定时间</string>
-    <string name="summary_down_sec">判定手机为朝下所需的时间</string>
+    <string name="summary_timeout_sec">在传感器关闭后屏幕熄灭的时间</string>
+    <string name="title_down_sec">反转判定时间</string>
+    <string name="summary_down_sec">判定设备为正面朝下所需的时间</string>
     <string name="flip_action_positive">确定</string>
     <string name="flip_dialog_title">功能说明</string>
-    <string name="flip_dialog_msg">你的手机将会在你将它翻转后自动进入所设定的振动或静音模式。\n默认在翻转1.5秒后进入所选模式。\n默认在进入所选模式后15秒以后，关闭翻转模式。\n备注：**若要返回正常模式，你需要在进入翻转模式后，将屏幕点亮超过所设定的“屏幕超时时间”。</string>
+    <string name="flip_dialog_msg">设备将在它正面朝下后自动进入所设定的振动或静音模式。
+    \n在反转1.5秒后（默认）进入所选模式。
+    \n在开启屏幕15秒后（默认）保持所选模式。
+    \n备注：**必须在正面依旧朝下的情况下开启屏幕并超过所设定的“屏幕超时时间”才可保持。
+    </string>
     <string name="summary_phone_flip_mode">来电响铃时翻转进入静音状态</string>
     <string name="title_phone_flip_mode">来电响铃静音</string>
 
@@ -446,13 +485,13 @@
     <string name="lockscreen_battery_title">锁屏电量百分比</string>
     <string name="lockscreen_battery_summary">总是在锁屏中显示电量百分比</string>
     <string name="lockscreen_hide_initial_page_hints_title">隐藏初始页面提示</string>
-    <string name="lockscreen_hide_initial_page_hints_summary">设置当屏幕开启时是否隐藏左右两边的小部件页面提示。</string>
+    <string name="lockscreen_hide_initial_page_hints_summary">设置当屏幕开启时是否隐藏左右两边的小部件页面提示</string>
     <string name="lockscreen_minimize_challenge_title">最小化解锁区</string>
-    <string name="lockscreen_minimize_challenge_summary">设置当屏幕开启时是否最小化解锁区（环形，图形解锁，PIN）。</string>
+    <string name="lockscreen_minimize_challenge_summary">当屏幕开启时最小化解锁区（环形，图形，PIN）。</string>
     <string name="lockscreen_longpress_challenge_title">启用长按解锁</string>
-    <string name="lockscreen_longpress_challenge_summary">使设备可以通过长按锁定图标解锁。</string>
-    <string name="lockscreen_use_widget_container_carousel_title">使用小部件旋转</string>
-    <string name="lockscreen_use_widget_container_carousel_summary">在切换屏幕小部件时使用旋转动的画效果。</string>
+    <string name="lockscreen_longpress_challenge_summary">长按最小化后的锁定图标解锁</string>
+    <string name="lockscreen_use_widget_container_carousel_title">小部件页面旋转动画</string>
+    <string name="lockscreen_use_widget_container_carousel_summary">在切换小部件页面时使用连页旋转的动画效果</string>
     <string name="volume_rocker_wake_title">音量键唤醒</string>
     <string name="volume_rocker_wake_summary">使用音量键唤醒设备</string>
     <string name="volume_music_controls_title">音量键控制音乐</string>
@@ -655,6 +694,8 @@
     <string name="weather_46">阵雪</string>
     <string name="weather_47">地区性雷雨</string>
 
+
+
     <!-- Miscellaneous 杂项 -->
     <string name="location_unavailable">无法获取当前位置的天气信息</string>
 
@@ -743,10 +784,12 @@
     <string name="screenshot">屏幕截图</string>
     <string name="menu">菜单</string>
     <string name="toggle_widgets">小部件</string>
-    <string name="open_ime_switcher">打开输入法选择器</string>
+    <string name="open_ime_switcher">输入法选择器</string>
     <string name="kill_app">结束程序</string>
+    <string name="lastapp">上次运行程序</string>
     <string name="power">电源</string>
-    <string name="notifications">通知</string>
+    <string name="notifications">通知栏</string>
+    <string name="recents_gb">近期任务 (姜饼风格)</string>
     <string name="custom_app">自定义程序</string>
     <string name="menu_power">电源菜单</string>
     <string name="blank">空</string>
